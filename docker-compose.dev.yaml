@@ -1,7 +1,7 @@
 services:
 
   web:
-    image: magic-stream-web-dev:1.0.0
+    image: magic-stream-web-dev:1.0.1
     container_name: magic-stream-web-dev
     ports:
     - "5173:5173"
@@ -20,7 +20,7 @@ services:
 
   api:
     #image: gavinlon/magic-stream-api:${IMAGE_TAG:-Latest}
-    image: magic-stream-api-dev:1.0.0
+    image: magic-stream-api-dev:1.0.1
     container_name: magic-stream-api-dev
     build:
       context: ./Server/MagicStreamServer
